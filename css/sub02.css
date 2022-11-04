@@ -1,0 +1,375 @@
+@charset "uft-8";
+
+.htg_bg {
+    background: url("../img/heritage_bg.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1800px;
+    height: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+
+/* 문화유산 뷰 */
+/* top _ 문화유산 이미지 */
+.htg_view .top { padding: 50px 0; box-sizing: border-box; }
+
+.htg_view .top h3 {
+    font-size: 40px;
+    color: #333;
+    font-weight: 500;
+}
+
+.htg_view .top .top_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 35px;
+    height: 600px;
+}
+
+.htg_view .top .htg_slider {
+    width: 57%;
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    padding: 90px;
+    box-sizing: border-box;
+}
+
+/* 슬라이더 */
+.htg_view .top .htg_slider_wrap {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    height: 420px;
+    background-color: #CECECE;
+    margin: 0 auto;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slide_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slide_box>li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slide_box>li.active { opacity: 1; }
+
+.htg_view .top .htg_slider_wrap .htg_slide_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* top_image_control_btn */
+.htg_view .top .htg_slider_wrap .htg_slider_control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_btn {
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 0;
+    height:40px;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_btn>button {
+    width: 40px;
+    height: 40px;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_btn .prev {
+    background: rgba(0, 0, 0, 0.5) url('../icons/prev_btn.png') no-repeat center;
+    background-size: 6px 11px;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_btn .next {
+    background: rgba(0, 0, 0, 0.5) url('../icons/next_btn.png') no-repeat center;
+    background-size: 6px 11px;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_control li {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 15px;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_control li {
+    display: none;
+    line-height: 40px;
+    height: auto;
+}
+
+.htg_view .top .htg_slider_wrap .htg_slider_control li.slick-active {
+    display: block;
+}
+
+
+
+/* top _ 문화유산 정보 */
+.htg_view .htg_info {
+    width: 40%;
+    height: 100%;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    padding: 40px 10px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.htg_view .htg_info .cont li {
+    font-size: 18px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #555;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.htg_view .htg_info .cont li:nth-child(1) { padding-top: 0; }
+
+.htg_view .htg_info .cont li span {
+    font-weight: 500;
+    color: #222;
+    width: 36%;
+    display: inline-block;
+}
+
+
+/* top _ 버튼 박스 */
+.htg_view .htg_info .htg_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.htg_view .htg_info .htg_btn button {
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    width: 33%;
+    padding: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0 3px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #646464;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.htg_view .htg_info .htg_btn button:hover,
+.htg_view .htg_info .htg_btn button:focus {
+    color: #002970;
+    border: 1px solid #002970;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.095);
+}
+
+
+/* bottom _ 문화유산 뷰탭 _ 상세설명//참고문헌//관련여행코스//관련여행후기 */
+/* bottom_tab */
+.htg_view .bottom {
+    clear: both;
+    position: relative;
+    padding-top: 60px;
+}
+
+.htg_view .bottom ul.view_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.htg_view .bottom ul.view_box>li { width: 25%; }
+
+.htg_view .bottom ul.view_box>li>a {
+    display: block;
+    width: 100%;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    border-right: 0;
+    text-align: center;
+    background: #f5f5f5;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px 10px 0 0;
+    color: #555555;
+    font-size: 16px;
+}
+
+.htg_view .bottom ul.view_box>li.on>a {
+    border-bottom: 2px solid #2D7CB5;
+    background: #fff;
+    color: #2D7CB5;
+}
+
+.htg_view .bottom ul.view_box>li:nth-child(4)>a { border-right: 1px solid #cecece; }
+.htg_view .bottom .tour_con { margin-top: 60px; }
+
+
+/* bottom_tab_box */
+.htg_view .bottom .tour_con {
+    display: none;
+    overflow: hidden;
+}
+
+.htg_view .bottom .tour_con.on { display: block; }
+
+.htg_view .bottom .tour_con .detail {
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    max-height: 400px;
+    overflow-y: auto;
+    letter-spacing: -0.01em;
+}
+
+
+/* bottom_tag */
+.htg_view .tag_line {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #707070;
+    padding: 0 0 8px 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #CECECE;
+    margin: 40px 0;
+}
+
+.htg_view .tag_line::before {
+    content: "";
+    background: url('../icons/tag_icon.png') no-repeat center;
+    width: 28px;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+}
+
+.htg_view .list_view { text-align: center; }
+
+.htg_view .list_view a.btn {
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #555555;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.htg_view .list_view a.btn-like {
+    display: inline-block;
+    min-width: 60px;
+    box-sizing: border-box;
+}
+
+.htg_view .list_view a.btn-like .pick_count::before {
+    content: "";
+    background: url("../icons/like.png") no-repeat center center;
+    background-size: contain;
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.htg_view .list_view a.btn:hover,
+.htg_view .list_view a.btn:focus {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.htg_view .list_view a.btn-list:hover,
+.htg_view .list_view a.btn-list:focus {
+    border: 1px solid #002970;
+    color: #002970;
+}
+
+.htg_view .list_view a.btn-like:hover,
+.htg_view .list_view a.btn-like:focus {
+    border: 1px solid #D40000;
+}
+
+
+/* 문화유산 목록 상세페이지_media query */
+@media screen and (max-width:1440px) {
+    .htg_view .top .htg_slider { padding-left: 50px; padding-right: 50px; }
+}
+
+@media screen and (max-width:1124px) {
+    .htg_view .htg_info .htg_btn { flex-direction: column; }
+    .htg_view .htg_info .htg_btn button { width: 100%; margin: 5px 0; }
+    .htg_view .bottom .tour_con .detail { padding: 50px; }
+}
+
+@media screen and (max-width:768px) {
+    .htg_bg { display: none; } 
+    .htg_view .top .top_wrap { height: auto; }
+
+    .htg_view .top .htg_slider {
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .htg_view .top h3 { text-align: center; font-size: 35px; }
+    .htg_view .top .top_wrap { flex-direction: column; }
+    .htg_view .htg_info { width: 100%; height: auto; }
+    .htg_view .htg_info .cont { margin-bottom: 30px; }
+    .htg_view .htg_info .cont li { font-size: 16px; }
+    .htg_view .bottom ul.view_box { flex-wrap: wrap; }
+    .htg_view .bottom ul.view_box>li { width: 50%; }
+    .htg_view .bottom ul.view_box>li>a { border-radius: 0; }
+
+    .htg_view .bottom ul.view_box>li:nth-child(2)>a { border-right: 1px solid #cecece; }
+
+    .htg_view .bottom ul.view_box>li:nth-child(3)>a,
+    .htg_view .bottom ul.view_box>li:nth-child(4)>a {
+        border-top: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .htg_view .top h3 { font-size: 28px; }
+    .htg_view .top .htg_slider_wrap { height: 280px; }
+    .htg_view .top .htg_slider { padding: 0; }
+    .htg_view .bottom .tour_con .detail { padding: 20px;} 
+}

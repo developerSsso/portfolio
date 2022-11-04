@@ -1,0 +1,443 @@
+@charset "uft-8";
+
+/* 공지사항 */
+
+.table-notice .table {
+    table-layout: auto;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-notice .text-center { text-align: center !important; }
+.table-notice .tb { border-top: 3px solid #002970; }
+
+.table-notice .tb tr>* {
+    border: 1px solid #CED4DA;
+    border-top: 0;
+    white-space: nowrap;
+}
+
+.table-notice .tb tr>*:first-child { border-left: 0; }
+.table-notice .tb.v2 tr>* { border-left: 0; border-right: 0; }
+.table-notice .tb thead th { border-bottom: 1px solid #ADB5BD; }
+
+.table-notice .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    padding: 20px 0;
+}
+
+.table-notice .tb th {
+    background: #F5FAFF;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    padding: 15px;
+}
+
+.table-notice .table-notice tbody tr>* { color: #343A40; }
+.table-notice .tb tr>*:first-child { border-left: 0; }
+.table-notice .tb.v2 tr>* { border-left: 0; border-right: 0; }
+
+
+@media screen and (min-width: 768px) {
+    .table-notice td { display: table-cell !important; }
+}
+
+
+.table-notice .tb td { padding: 1.6rem 1rem; background: #fff; }
+
+.table-notice .tb tr>* {
+    border: 1px solid #CED4DA;
+    border-top: 0;
+    white-space: nowrap;
+}
+
+.table-notice .badge {
+    display: inline-block;
+    background-color: #E9EBFE;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.table-notice .bg-primary {
+    background-color: #002970 !important;
+    color: #fff !important;
+}
+
+.table-notice tr td:nth-child(2) {
+    overflow: hidden;
+    max-width: 768px;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+.table-notice tbody tr>* { color: #343A40; }
+.table-notice tbody tr { font-size: 16px; color: #747474; }
+
+
+
+/* 공지사항 뷰 */
+.boardList table {
+    table-layout: fixed;
+    position: relative;
+    text-align: center;
+}
+
+.boardList table::before {
+    content: "";
+    width: 100%;
+    background-color: #585858;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+}
+
+.boardList table thead th {
+    border-bottom: 1px solid #585858;
+    color: #222;
+    padding: 1.4rem 1rem;
+    font-weight: normal;
+    font-family: 'notokrMedium';
+}
+
+.boardList table td {
+    border-bottom: 1px solid #ddd;
+    padding: 1.4rem 1rem;
+    color: #666;
+}
+
+.boardList .subject { text-align: left; }
+.boardList .subject a { color: #333; }
+
+.boardList .icoNew {
+    background: url("/assets/images/common/iconNew.gif") no-repeat;
+    width: 12px;
+    height: 11px;
+    display: inline-block;
+    text-indent: -9999px;
+    position: relative;
+    top: 5px;
+}
+
+.boardView { margin-top: 5rem; }
+.boardView .viewTopBtn { margin-bottom: 2rem; text-align: right; }
+
+.boardView .viewTopBtn .btn {
+    color: #fff;
+    padding: 0 1.5rem;
+    line-height: 4rem;
+    display: inline-block;
+    min-width: 84px;
+    box-sizing: border-box;
+    margin-left: 1rem;
+}
+
+.boardView .viewTopBtn .email { background: #be860a; }
+.boardView .viewTopBtn .list { background: #4a8dcb; }
+
+.boardView .viewTopBtn .btn.fileGo {
+    color: #fff;
+    background: #383d53;
+    padding: 0 3.5rem 0 1.5rem;
+    border: 1px solid #383d53;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 3.8rem;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+
+.boardView .viewTopBtn .btn.fileGo::before {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    content: '';
+    margin-top: -6px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    bottom: auto;
+    left: auto;
+    transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.boardView .viewTopBtn .btn.fileGo:hover { color: #383d53; background: #fff; }
+.boardView .viewTopBtn .btn.fileGo:hover::before { border-color: #383d53; }
+.boardView .viewHead { border-top: 2px solid #002970; border-bottom: 1px solid #DDDDDD; }
+
+.viewHead .subject {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #222;
+    font-size: 30px;
+    border-bottom: 1px solid #C1C1C1;
+    font-weight: 600;
+    word-break: keep-all;
+}
+
+.viewHead .subject .category {
+    display: inline-block;
+    padding: 0 1.5rem;
+    border: 1px solid #4a8dcb;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #4a8dcb;
+    margin-right: 1rem;
+}
+
+.viewHead .viewInfo {
+    background-color: #F9FCFF;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+
+.viewHead .viewInfo ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.viewHead .viewInfo li {
+    display: inline-block;
+    padding: 0 0 0 2rem;
+    box-sizing: border-box;
+}
+
+.viewHead .viewInfo li strong {
+    font-weight: 600;
+    color: #222;
+    padding-right: .8rem;
+}
+
+.viewHead .viewInfo li:first-child { padding-left: 0; }
+.viewHead .viewInfo.osmb { border-bottom: 1px solid #ddd; }
+
+.viewHead .viewInfo .btnOsmb {
+    margin-left: 1rem;
+    display: inline-block;
+    color: #07348c;
+    padding: 0 3rem 0 1.5rem;
+    line-height: 4rem;
+    min-width: 84px;
+    box-sizing: border-box;
+    border: 1px solid #07348c;
+    font-size: 1.5rem;
+    background: #fff;
+    position: relative;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+
+.viewHead .viewInfo .btnOsmb::before {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    content: '';
+    margin-top: -4px;
+    border-top: 1px solid #383d53;
+    border-right: 1px solid #383d53;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    bottom: auto;
+    left: auto;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.viewHead .viewInfo .btnOsmb:hover { color: #fff; background: #07348c; }
+.viewHead .viewInfo .btnOsmb:hover::before { border-color: #fff; }
+
+.viewCont {
+    padding: 50px 50px 100px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.viewFile {
+    border-bottom: 1px solid #707070;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.viewFile .tit {
+    display: inline-block;
+    width: 15%;
+    font-weight: 600;
+    color: #222;
+}
+
+.viewFile .addFile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.viewFile .addFile li { overflow: hidden; }
+.viewFile .addFile li~li { margin-top: .5rem; }
+.viewFile .addFile a { display: inline-block; }
+
+.viewFile .addFile .btn {
+    float: right;
+    border: 1px solid #999;
+    margin-right: 2rem;
+    padding: .2rem 2.8rem .2rem 1rem;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+.list_view { text-align: center; }
+.list_view a.btn { border: 1px solid #aaa; background-color: #fff; }
+
+.list_view a.btn-like {
+    display: inline-block;
+    min-width: 60px;
+    box-sizing: border-box;
+}
+
+.list_view a.btn-like .pick_count::before {
+    content: "";
+    background: url("../icons/like.png") no-repeat center center;
+    background-size: contain;
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.list_view a.btn:hover,
+.list_view a.btn:focus {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.list_view a.btn-list:hover,
+.list_view a.btn-list:focus {
+    border: 1px solid #002970;
+    color: #002970;
+}
+
+.list_view a.btn-like:hover,
+.list_view a.btn-like:focus {
+    border: 1px solid #D40000;
+}
+
+.boardView .researchBoardList .subject::before,
+.boardView .researchBoardList .subject::after {
+    display: none;
+}
+
+.koglWrap { background: #f6f6f8; margin-top: 3rem; }
+
+.koglWrap p {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 2rem;
+    word-break: keep-all;
+}
+
+.koglWrap .pic {
+    text-align: center;
+    height: auto;
+    width: 28rem;
+    padding: 3rem 0;
+}
+
+.koglWrap .pic a { display: block; }
+.koglWrap .info a { color: #07348c; font-family: 'notokrMedium'; }
+
+
+
+/* 반응형  */
+@media screen and (max-width: 768px) {
+    .nav-pills {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    
+    .table-notice col:first-child { width: 100% !important; }
+    .table-notice col { width: 0 !important; }
+    .table-notice .icon-link { margin-left: 5px; }
+
+    .table-notice tbody tr {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-notice thead { display: none; }
+
+    .table-notice,
+    .table-notice tr,
+    .table-notice tbody,
+    .table-notice tr>* {
+        display: block;
+    }
+
+    .table-notice tr { padding: 20px 0; border-bottom: 1px solid #CED4DA; }
+    .table-notice td { padding: 0 !important; margin:2px 0; }
+
+    .table-notice .tb tr>* {
+        border: none;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .table-notice tbody tr>td:nth-child(1),
+    .table-notice tbody tr>td:nth-child(3) {
+        display: none;
+    }
+    
+    .table-notice tbody tr>td:nth-child(2) {font-weight:600; font-size:16px; }
+   
+    .table-notice tbody tr>td:before { color:#808080; margin-right:10px; }
+    .table-notice tbody tr>td:nth-child(4):before { content:"작성자"; }
+    .table-notice tbody tr>td:nth-child(5):before { content:"작성일"; }
+    .table-notice tbody tr>td:nth-child(6):before { content:"조회수"; }
+}
+
+@media screen and (max-width: 480px) {
+    /* 공지사항 상세페이지 */
+   .viewHead .subject { font-size: 24px; padding: 15px; }
+   .viewHead .viewInfo, .viewFile { border-bottom:0px; padding: 0; }
+   .viewHead .viewInfo ul { flex-direction: column; }
+   
+   .viewHead .viewInfo li {
+       width: 100%;
+       display: block;
+       padding: 15px !important;
+       border-bottom: 1px solid #ddd; 
+   }
+   
+   .viewHead .viewInfo li:nth-child(2), .viewFile .tit { display: none; }	
+   .viewCont { padding: 40px 10px 60px; }
+}
