@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전라북도 문화유산 관광가이드</title>
+
+    <meta name="author" content="전라북도 문화유산과">
+    <meta name="description" content="전라북도의 역사와 기록을 간직한 문화유산이 있습니다.">
+    <meta name="keywords" content="전주, 전북도청, 문화유산, 문화관광, 전라북도 문화유산, 전라북도, 문화재, 전북관광, 전북문화">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="/jeonbuk_chm/postmedia/tourGuide/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/jeonbuk_chm/postmedia/tourGuide/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="/jeonbuk_chm/postmedia/tourGuide/img/favicon.ico"
+        type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/main_0831.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/postmedia/tourGuide/css/style.css">
+
+    <!-- HTML5shiv ie6~9 -->
+    <!--[if IE 10]>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!")
+        </script>
+    <![endif]-->
+
+    <!-- Javascript -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/modernizr-custom..js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/tour.js"></script>
+    <script src="${pageContext.request.contextPath}/gtopia/js/tgd/tgd20.js"></script>
+    <script>
+        var initBody;
+        function beforePrint() {
+            initBody = document.body.innerHTML;
+            document.body.innerHTML = document.getElementById('content').outerHTML;
+        }
+
+        function afterPrint() {
+            document.body.innerHTML = initBody;
+        }
+
+        // print
+        function fnPrint() {
+            alert("크롬, 오페라 브라우저 사용 시 배경이 안나오는 경우, 인쇄창 컬러 항목 아래 +설정 더보기 > 배경 그래픽에 체크 후 다시 시도해주세요.");
+
+            var inbody = document.body.innerHTML; // 이전 body 영역 저장
+
+            window.onbeforeprint = beforePrint;
+            window.onafterprint = afterPrint;
+            window.print();
+        }
+
+        // sns 공유 (기능) 
+        function fnShareSNS(sns) {
+            // 공유하는 페이지 <title> 태그 가져오기
+            var strTitle = document.title;
+            var strURL = window.location.href;
+            var snsArray = new Array();
+            // encodeURIComponent() : HTML 특수개체 문자 처리방식
+            snsArray['facebook'] = "http://www.facebook.com/share.php?t=" + encodeURIComponent(strTitle) + "&u=" + encodeURIComponent(strURL);
+            snsArray['naverblog'] = "http://share.naver.com/web/shareView.nhn?url=" + encodeURIComponent(strURL) + "&title=" + encodeURIComponent(strTitle);
+            snsArray['kakaotalk'] = "http://story.kakao.com/share?url=" + encodeURIComponent(strURL);
+            snsArray['kakaostory'] = "https://story.kakao.com/share?url=" + encodeURIComponent(strURL);
+
+            // 새 창으로 snsArray 링크 열기
+            window.open(snsArray[sns], "SNS 공유하기 새창", "width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes");
+        }
+    </script>
+
+    <style>
+        .chart_zone {
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .chart_zone h1 {
+            text-align: center;
+        }
+
+        .chart_zone>div {
+            width: 33%;
+        }
+
+        .pie-chart {
+            display: flex;
+            justify-content: center;
+        }
+
+        .chart_reset_btn {
+            background-color: #456fd1;
+            border-radius: 10px;
+            padding: 5px 20px;
+            color: #FFFFFF;
+        }
+
+        svg {
+            overflow: visible;
+        }
+
+        div#mytable {
+            margin: 30px 0;
+        }
+
+        #mytable tr {
+            height: 45px;
+        }
+
+        #mytable td.dc-table-column._0 {
+            width: 12%;
+        }
+
+        #mytable td.dc-table-column._1 {
+            width: 7%;
+        }
+
+        #mytable td.dc-table-column._2 {
+            width: 12%;
+        }
+
+        #mytable td.dc-table-column._3 {
+            width: 25%;
+        }
+
+        #mytable td.dc-table-column._4 {
+            width: 34%;
+            word-break: break-all;
+            padding: 0 10px;
+        }
+
+        #mytable td.dc-table-column._5 {
+            width: 10%;
+        }
+
+        .table_chart th {
+            background-color: rgb(250, 250, 250);
+            border: 1px solid rgb(221, 221, 221);
+            border-top: 1px solid black;
+            border-bottom: 5px double rgb(221, 221, 221);
+            text-align: center;
+        }
+
+        .table_chart th:first-child {
+            border-left: none;
+        }
+
+        .table_chart th:last-child {
+            border-right: none;
+        }
+
+        .table_chart td {
+            text-align: center;
+            border: 1px solid rgb(221, 221, 221);
+            border-top: none;
+        }
+
+        .table_chart td:first-child {
+            border-left: none;
+        }
+
+        .table_chart td:last-child {
+            border-right: none;
+        }
+
+        div#paging {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .table_sort_btn {
+            background: transparent;
+            border: none;
+            margin-left: 12px;
+        }
+
+        .table_chart_box {
+            margin-top: 100px;
+        }
+
+        #mytable {
+            width: 100%;
+        }
+
+        .bar_chart1_zone {
+            margin-bottom: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <header class="header wrap">
+            <!-- header top -->
+            <div class="topMenu">
+                <div class="topMenu_wrap">
+                    <ul class="left_util">
+                        <li><a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank"
+                                title="전북도청 새창열림">전라북도청</a>
+                        </li>
+                        <li><a href="https://tour.jb.go.kr/index.do" target="_blank" title="전라북도 토탈관광 새창열림">전라북도
+                                토탈관광</a>
+                        </li>
+                        <li><a href="http://www.jbtourpass.kr/" target="_blank" title="전북투어패스 새창열림">전북투어패스</a>
+                        </li>
+                    </ul>
+                    <ul class="right_util">
+                        <li><a href="sub-12-login.html" target="_self" title="로그인 서브페이지 이동">로그인</a>
+                        </li>
+                        <li><a href="sub-10-mypage.html" target="_self" title="마이페이지 서브페이지 이동">마이페이지</a>
+                        </li>
+                        <li><a href="sub-11-notice.html" target="_self" title="공지사항 서브페이지 이동">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //header top -->
+
+            <div class="navi">
+                <div class="navi_wrap">
+                    <h1 class="logo">
+                        <span class="hide">전라북도 문화유산 관광가이드 로고</span>
+                        <a href="main.html" target="_self" title="메인페이지 이동">
+                        </a>
+                    </h1>
+
+                    <!-- header navi -->
+                    <nav id="gnb">
+                        <div class="gnb_bg">
+                            <h2>전라북도 문화유산</h2>
+                            <span><img src="./img/navi_bg.png" alt="메뉴페이지 배경이미지"></span>
+                        </div>
+                        <ul class="depth1">
+                            <li><a href="#none">전라북도 문화유산</a>
+                                <ul class="depth2">
+                                    <li><a href="sub-01.html" target="_self" title="문화유산 목록 서브페이지 이동">
+                                            문화유산 목록
+                                        </a></li>
+                                    <li><a href="sub-03.html" target="_self" title="문화유산 현황 서브페이지 이동">
+                                            문화유산 현황
+                                        </a></li>
+                                    <li><a href="sub-04-map.html" target="_self" title="지도에서 찾기 서브페이지 이동">
+                                            지도에서 찾기
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://heritage.jeonbuk.go.kr/jeonbuk_chm/tourGuide/3010_01.do" target="_self"
+                                    title="360도 VR 서브페이지 이동">360˚ VR
+                                    체험존</a></li>
+                            <li><a href="#none">문화유산 여행</a>
+                                <ul class="depth2">
+                                    <li><a href="sub-05.html" target="_self" title="문화유산 여행 추천코스 서브페이지 이동">
+                                            문화유산 여행 추천코스
+                                        </a></li>
+                                    <li><a href="./sub-07.html" target="_self" title="문화유산 여행 후기 서브페이지 이동">
+                                            문화유산 여행 후기
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- header navi -->
+
+                    <!-- header icon -->
+                    <div class="navi_icon">
+                        <ul class="navi_util">
+                            <li class="search_on">
+                                <div class="search_open">
+                                    <button type="button"><span class="hide">검색영역 열기</span></button>
+                                </div>
+                                <div class="search">
+                                    <div class="search_wrap">
+                                        <form action="#">
+                                            <fieldset>
+                                                <legend><span class="hide">통합검색</span></legend>
+                                                <div class="form_wrap clearfix">
+                                                    <input type="search" name="total_search" id="total_search"
+                                                        class="text" placeholder="검색어를 입력하세요">
+                                                    <label for="total_search" class="search_label"><span
+                                                            class="hide">검색어
+                                                            입력</span></label>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="search_close">
+                                        <button type="button"><span class="hide">검색영역 닫기</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="m_nav">
+                                <button type="button" class="m_btn"><span class="hide">모바일 메뉴 열기</span></button>
+
+                                <div class="m_menu">
+                                    <div class="m_top">
+                                        <h1 class="m_logo">
+                                            <a href="main.html" target="_self" title="메인페이지 이동">
+                                                <img src="./img/logo.png" alt="mlogo">
+                                            </a>
+                                        </h1>
+                                        <button type="button" class="close_btn">
+                                            <img src="./icons/close.png" alt="close" />
+                                        </button>
+                                    </div>
+
+                                    <ul class="m_depth1">
+                                        <li><a href="#none">전라북도 문화유산</a>
+                                            <ul class="m_depth2">
+                                                <li><a href="sub-01.html" target="_self" title="문화유산 목록 서브페이지 이동">
+                                                        문화유산 목록
+                                                    </a></li>
+                                                <li><a href="sub-03.html" target="_self" title="문화유산 현황 서브페이지 이동">
+                                                        문화유산 현황
+                                                    </a></li>
+                                                <li><a href="sub-04-map.html" target="_self" title="지도에서 찾기 서브페이지 이동">
+                                                        지도에서 찾기
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none" target="_self" title="360도 VR 서브페이지 이동">360˚ VR 체험존</a></li>
+                                        <li><a href="#none">문화유산 여행</a>
+                                            <ul class="m_depth2">
+                                                <li><a href="sub-05.html" target="_self" title="문화유산 여행 추천코스 서브페이지 이동">
+                                                        문화유산 여행 추천코스
+                                                    </a></li>
+                                                <li><a href="sub-07.html" target="_self" title="문화유산 여행 후기 서브페이지 이동">
+                                                        문화유산 여행 후기
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="m_bg"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //header icon -->
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- //header -->
+
+
+
+    <main id="sub">
+        <div id="sub_banner">
+            <!-- sub_topimg -->
+            <div class="subloca">
+                <!-- 서브로케이터&페이지버튼 S -->
+                <div class="sub_wrap">
+                    <p class="subtit">전라북도 문화유산</p>
+                    <div class="loca">
+                        <span class="home">HOME</span>
+                        <span>전라북도 문화유산</span>
+                        <span>문화유산 현황</span>
+                    </div>
+                </div>
+            </div>
+            <!-- //sub_topimg -->
+
+            <!-- sub_topnavi -->
+            <div class="submenu1">
+                <div class="sub_wrap">
+                    <ul class="sub_depth2">
+                        <li class="lm_l2"><a class="lm_a2" href="sub-01.html" target="_self" title="서브페이지 이동"><span>문화유산
+                                    목록</span></a></li>
+                        <li class="lm_l2 over"><a class="lm_a2" href="sub-03.html" target="_self"
+                                title="서브페이지 이동"><span>문화유산 현황</span></a></li>
+                        <li class="lm_l2 "><a class="lm_a2" href="sub-04-map.html" target="_self"
+                                title="서브페이지 이동"><span>지도에서 찾기</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //sub_topnavi -->
+        </div>
+
+        <div id="sub_container">
+            <div class="sub_wrap">
+                <div id="sub_content">
+
+                    <!-- 공유하기 -->
+                    <div class="share-bx">
+                        <div class="share">
+                            <a href="#" role="button" class="open">공유하기</a>
+                            <div class="view">
+                                <a href="javascript:fnShareSNS('facebook');" class="facebook i-sns">페이스북</a>
+                                <a href="javascript:fnShareSNS('naverblog');" class="blog i-sns">블로그</a>
+                                <a href="javascript:fnShareSNS('kakaotalk');" class="kakaot i-sns">카카오톡</a>
+                                <a href="javascript:fnShareSNS('kakaostory');" class="kakaos i-sns">카카오스토리</a>
+                            </div>
+                        </div>
+                        <a href="javascript:fnPrint();" class="print">
+                            프린트를 출력합니다.
+                        </a>
+                    </div>
+                    <!-- //공유하기 -->
+
+                    <div class="conts_area">
+                        <div class="conts_area_wrap">
+                            <h2>문화유산 현황</h2>
+
+                            <div id="heritage_lst">
+                                <!-- 서브페이지 공통 검색창 -->
+                                <div class="searchtop_wrap">
+                                    <div class="searchtop">
+                                        <div class="count">
+                                            <strong>전체</strong><span>831</span>건
+                                        </div>
+                                        <div class="s_box">
+                                            <span class="select">
+                                                <select id="sch_1" name="sch_1">
+                                                    <option value="전체">전체</option>
+                                                    <option value="국보">국보</option>
+                                                    <option value="보물">보물</option>
+                                                    <option value="사적">사적</option>
+                                                    <option value="명승">명승</option>
+                                                    <option value="천연기념물">천연기념물</option>
+                                                    <option value="국가민속문화재">국가민속문화재</option>
+                                                    <option value="등록문화재">등록문화재</option>
+                                                    <option value="문화재자료">문화재자료</option>
+                                                    <option value="도지정유형문화재">도지정유형문화재</option>
+                                                    <option value="도지정기념물">도지정기념물</option>
+                                                    <option value="도지정민속문화재">도지정민속문화재</option>
+                                                    <option value="무형문화재">무형문화재</option>
+                                                </select>
+                                            </span>
+                                            <span class="input">
+                                                <input type="text" id="sch_2" name="sch_2" placeholder="검색어를 입력하세요"
+                                                    onkeypress="if(event.keyCode==13){ goSearch();}" value="">
+                                            </span>
+                                            <a href="javascript:goSearch();" class="btn">검색</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //서브페이지 공통 검색창 -->
+
+
+
+                                <!-- 차트 -->
+                                <div class="htg_chart">
+                                    <!-- 이 안에 차트 구조를 넣어주실 수 있나요? -->
+                                </div>
+                                <!-- //차트 -->
+
+
+
+
+                                <!-- 공통 페이징 -->
+                                <div class="pageing">
+                                    <a href="#none" class="btn_first btn_all"><span class="hide">처음페이지</span></a>
+                                    <a href="#none" class="btn_before btn_all"><span class="hide">이전페이지</span></a>
+                                    <a href="#none" class="on">1</a>
+                                    <a href="#none">2</a>
+                                    <a href="#none">3</a>
+                                    <a href="#none">4</a>
+                                    <a href="#none">5</a>
+                                    <a href="#none">6</a>
+                                    <a href="#none">7</a>
+                                    <a href="#none">8</a>
+                                    <a href="#none">9</a>
+                                    <a href="#none">10</a>
+                                    <a class="btn_after btn_all" href="#none"><span class="hide">다음페이지</span></a>
+                                    <a class="btn_last btn_all" href="#none"><span class="hide">마지막페이지</span></a>
+                                </div>
+                                <!-- //공통 페이징 -->
+
+                            </div>
+                        </div>
+
+                        <!-- 만족도 조사 -->
+                        <div class="content-info">
+                            <!-- 메뉴담당자 -->
+                            <div class="content-info__charge">
+                                <strong class="content-charge__title">메뉴담당자</strong>
+                                <span><em>담당부서 : </em>문화유산과</span>
+                                <!-- <span><em>연락처 : </em>063-000-0000</span> -->
+                            </div>
+                            <!-- //메뉴담당자 -->
+                            <!-- 만족도평가 -->
+                            <div class="content_info__satisfaction">
+                                <form name="researchForm" method="POST" action="">
+                                    <fieldset>
+                                        <span class="hide">만족도 조사</span>
+                                        <strong class="page_info">이 페이지에서 제공하는 정보에 대하여 만족하시나요?</strong>
+                                        <div class="research">
+                                            <span class="hide">만족도 조사</span>
+                                            <div class="research_wrap">
+                                                <label for="research_point_1"><input name="point" class="point_radio"
+                                                        type="radio" id="research_point_1" value="5"> 매우만족</label>
+                                                <label for="research_point_2"><input name="point" class="point_radio"
+                                                        type="radio" id="research_point_2" value="4"> 만족</label>
+                                                <label for="research_point_3"><input name="point" class="point_radio"
+                                                        type="radio" id="research_point_3" value="3"> 보통</label>
+                                                <label for="research_point_4"><input name="point" class="point_radio"
+                                                        type="radio" id="research_point_4" value="2"> 불만족</label>
+                                                <label for="research_point_5"><input name="point" class="point_radio"
+                                                        type="radio" id="research_point_5" value="1"> 매우불만족</label>
+                                            </div>
+                                            <div class="btn-wrap pull-right">
+                                                <a class="btn-submit" href="#none" onclick="" title="입력">입력</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- //만족도평가 -->
+                        </div>
+                        <!-- //만족도 조사 -->
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script>
+        var cf;
+        let cps = new Array();
+        let addUrl = "";
+        chartChange();
+
+        var tableChart = dc.dataTable("#mytable");
+
+        /* 차트 변경 함수 */
+        function chartChange(regCd, sortName, btnCnt) {
+            let pieChart1 = dc.pieChart('#pie-chart1');
+            let pieChart2 = dc.pieChart('#pie-chart2');
+            let pieChart3 = dc.pieChart('#pie-chart3');
+            let yearChart1 = dc.bubbleChart('#year-chart1');
+            let barChart1 = dc.barChart('#bar-chart1');
+            let horizonChart1 = dc.rowChart('#horizon-chart1');
+
+            if (sortName == "분류") {
+                sortName = "cpsGbnCd";
+            } else if (sortName == "지정번호") {
+                sortName = "dsgNo";
+            } else if (sortName == "문화재 명칭") {
+                sortName = "cpsNm";
+            } else if (sortName == "소재지") {
+                sortName = "location";
+            } else if (sortName == "시/군") {
+                sortName = "regNm";
+            } else if (sortName == "종목") {
+                sortName = "classNm1";
+            }
+
+            console.log(regCd);
+
+            let jsonUrl = null;
+
+            if (regCd == "all") {
+                jsonUrl = "./getRegionsHeritageListByAjax.do";
+            } else if (regCd != "all") {
+                jsonUrl = "./getRegionsHeritageListByAjax.do?regCd=" + regCd;
+            }
+
+
+            if (addUrl.trim().length > 0) {
+                jsonUrl + addUrl;
+            }
+
+
+            if (btnCnt == undefined || btnCnt == null) {
+                d3.json(jsonUrl, function (ex) {
+
+                    cf = crossfilter(ex.chartdata);
+
+                    var horizonChartDimension = cf.dimension(function (data) {
+                        return data.regNm;
+                    });
+
+                    var horizonGroup = horizonChartDimension.group().reduceCount();
+
+                    horizonChart1.on('renderlet', function (chart) {
+                        updateTable();
+                    }).width(1250).height(600)
+                        .group(horizonGroup).dimension(horizonChartDimension).label(function (p) { return p.key + ": " + p.value + "개" })
+                        .xAxis().ticks(4);
+
+                    var dimension5 = cf.dimension(function (data) {
+                        return data.dsgYmd;
+                    });
+
+                    var group5 = dimension5.group().reduce(
+                        function (p, v) { p.year = v.dsgYmd; p.countR += 1; p.countY += 1; return p; },
+                        function (p, v) { p.year = v.dsgYmd; p.countR -= 1; p.countY -= 1; return p; },
+                        function () { return { year: 0, countR: 0, countY: 0 } }
+                    );
+
+                    yearChart1.width(1200).height(350).dimension(dimension5).group(group5)
+                        .margins({ top: 10, right: 50, bottom: 30, left: 40 })
+                        .x(d3.scale.linear().domain([1950, 2030]))
+                        .y(d3.scale.linear().domain([0, 400]))
+                        .r(d3.scale.linear().domain([0, 600]))
+                        .keyAccessor(function (p) { return p.value.year; })
+                        .valueAccessor(function (p) { return p.value.countY; })
+                        .radiusValueAccessor(function (p) { return p.value.countR * 2 / 3; })
+                        .elasticY(true)
+                        .transitionDuration(1000)
+                        .yAxisPadding(350)
+                        .xAxisPadding(20)
+                        .maxBubbleRelativeSize(0.15)
+                        .renderLabel(true)
+                        .renderTitle(true)
+                        .renderHorizontalGridLines(true)
+                        .renderVerticalGridLines(true)
+                        .label(p => p.key)
+                        .title(function (p) { return p.key + "년: " + p.value.countY + "개" })
+                        .on('renderlet', function (chart) {
+                            updateTable();
+                        });
+                    yearChart1.xAxis().tickFormat(function (s) { return s + "년도"; });
+
+                    var dimension1 = cf.dimension(function (data) {
+                        return data.dsgGbnNm;
+                    });
+
+                    var group1 = dimension1.group().reduceCount();
+
+                    pieChart1.width(250).height(250).dimension(dimension1).label(function (p) { return p.key + " " + p.value + "개"; })
+                        .transitionDuration(1200)
+                        .group(group1)
+                        .on('renderlet', function (chart) {
+                            updateTable();
+                        });
+
+                    var dimension2 = cf.dimension(function (data) {
+                        return data.cpsGbnCd;
+                    });
+
+                    var group2 = dimension2.group().reduceCount();
+
+                    pieChart2.width(250).height(250).dimension(dimension2).group(group2).label(function (p) { return p.key + " " + p.value + "개"; })
+                        .transitionDuration(1400)
+                        .on('renderlet', function (chart) {
+                            updateTable();
+                        });
+
+                    var dimension3 = cf.dimension(function (data) {
+                        return data.classNm1;
+                    });
+
+                    var group3 = dimension3.group().reduceCount();
+
+                    pieChart3.width(250).height(250).dimension(dimension3).group(group3).label(function (p) { return p.key + " " + p.value + "개"; })
+                        .legend(dc.legend().x(275).y(20).itemHeight(11).gap(15))
+                        .transitionDuration(1600)
+                        .innerRadius(40).on('renderlet', function (chart) {
+                            updateTable();
+                        });
+
+                    var dimension6 = cf.dimension(function (data) {
+                        return data.material;
+                    })
+
+                    var group6 = dimension6.group().reduceCount();
+
+                    barChart1.width(1250).height(350).margins({ top: 10, right: 50, bottom: 60, left: 60 })
+                        .group(group6).dimension(dimension6).elasticY(true).elasticX(true)
+                        .renderHorizontalGridLines(true).x(d3.scale.ordinal()).xUnits(dc.units.ordinal)
+                        .transitionDuration(1900)
+                        .colorCalculator(function (d, i) {
+                            return randomColor();
+                        }).on('renderlet', function (chart) {
+                            chart.selectAll("g.x text").attr('dx', '-35').attr('transform', "rotate(-60)");
+                            updateTable();
+                        }).yAxis().ticks(5);
+
+                    var dimension4 = cf.dimension(function (data) {
+                        return data.classNm1;
+                    })
+
+                    if (sortName == undefined) {
+                        sortName = "classNm1";
+                    }
+
+                    tableChart.dimension(dimension4).columns([
+                        {
+                            label: "종목",
+                            format: function (d) {
+                                return d.classNm1;
+                            }
+                        },
+                        {
+                            label: "분류",
+                            format: function (d) { return d.cpsGbnCd.trim() }
+                        },
+                        {
+                            label: "지정번호",
+                            format: function (d) {
+                                let dsgNo;
+                                if (d.dsgNbr != null) {
+                                    dsgNo = d.dsgNbr.trim();
+                                }
+
+                                return dsgNo;
+                            }
+                        },
+                        {
+                            label: "문화재 명칭",
+                            format: function (d) {
+
+                                return "<a href=\"javascript:CulturalPropertyDetails_test(\'" + d.cpsNo + "\',\'" + d.classCd1 + "\')\">" + d.cpsNm + "</a>";
+                            }
+                        },
+                        {
+                            label: "소재지",
+                            format: function (d) { return d.location }
+                        },
+                        {
+                            label: "시/군",
+                            format: function (d) { return d.regNm }
+                        },
+                    ]).size(Infinity).sortBy(function (d) {
+                        if (sortName == "dsgNo" && btnCnt != 0) {
+                            return btnCnt * d.dsgNbr;
+                        }
+                        return d.classNm1;
+                    })
+                        .order(d3.ascending)
+                        .on('renderlet', function (table) {
+                            table.selectAll(".dc-table-group").style('display', 'none');
+                        });
+                    dc.renderAll();
+                    updateTable();
+                });
+            } else {
+                var dimension4 = cf.dimension(function (data) {
+                    return data.classNm1;
+                })
+
+                if (sortName == undefined) {
+                    sortName = "classNm1";
+                }
+                if (sortName == "dsgNo" || btnCnt == 0) {
+                    tableChart.dimension(dimension4).columns([
+                        {
+                            label: "종목",
+                            format: function (d) {
+                                return d.classNm1;
+                            }
+                        },
+                        {
+                            label: "분류",
+                            format: function (d) { return d.cpsGbnCd.trim() }
+                        },
+                        {
+                            label: "지정번호",
+                            format: function (d) {
+                                let dsgNo;
+                                if (d.dsgNbr != null) {
+                                    dsgNo = d.dsgNbr.trim();
+                                }
+
+                                return dsgNo;
+                            }
+                        },
+                        {
+                            label: "문화재 명칭",
+                            format: function (d) {
+
+                                return "<a href=\"javascript:CulturalPropertyDetails_test(\'" + d.cpsNo + "\',\'" + d.classCd1 + "\')\">" + d.cpsNm + "</a>";
+                            }
+                        },
+                        {
+                            label: "소재지",
+                            format: function (d) { return d.location }
+                        },
+                        {
+                            label: "시/군",
+                            format: function (d) { return d.regNm }
+                        },
+                    ]).size(Infinity).sortBy(function (d) {
+                        if (sortName == "dsgNo" && btnCnt != 0) {
+                            return btnCnt * d.dsgNbr;
+                        }
+                        return d.classNm1;
+                    })
+                        .order(d3.ascending)
+                        .on('renderlet', function (table) {
+                            table.selectAll(".dc-table-group").style('display', 'none');
+                        });
+                } else if (sortName != "dsgNo" && btnCnt == 1) {
+                    tableChart.dimension(dimension4).columns([
+                        {
+                            label: "종목",
+                            format: function (d) {
+                                return d.classNm1;
+                            }
+                        },
+                        {
+                            label: "분류",
+                            format: function (d) { return d.cpsGbnCd.trim() }
+                        },
+                        {
+                            label: "지정번호",
+                            format: function (d) {
+                                let dsgNo;
+
+                                if (d.dsgNbr != null) {
+                                    dsgNo = d.dsgNbr.trim();
+                                }
+
+                                return dsgNo;
+                            }
+                        },
+                        {
+                            label: "문화재 명칭",
+                            format: function (d) {
+
+                                return "<a href=\"javascript:CulturalPropertyDetails(\'" + d.cpsNo + "\',\'" + d.classCd1 + "\')\">" + d.cpsNm + "</a>";
+                            }
+                        },
+                        {
+                            label: "소재지",
+                            format: function (d) { return d.location }
+                        },
+                        {
+                            label: "시/군",
+                            format: function (d) { return d.regNm }
+                        },
+                    ]).size(Infinity).sortBy(function (d) {
+                        if (sortName == "cpsGbnCd") {
+                            return d.cpsGbnCd;
+                        } else if (sortName == "cpsNm") {
+                            return d.cpsNm;
+                        } else if (sortName == "location") {
+                            return d.location;
+                        } else if (sortName == "regNm") {
+                            return d.regNm;
+                        }
+                        return d.classNm1;
+                    }).order(d3.ascending)
+                        .on('renderlet', function (table) {
+                            table.selectAll(".dc-table-group").style('display', 'none');
+                        });
+                } else if (sortName != "dsgNo" && btnCnt == -1) {
+                    tableChart.dimension(dimension4).columns([
+                        {
+                            label: "종목",
+                            format: function (d) {
+                                return d.classNm1;
+                            }
+                        },
+                        {
+                            label: "분류",
+                            format: function (d) { return d.cpsGbnCd.trim() }
+                        },
+                        {
+                            label: "지정번호",
+                            format: function (d) {
+                                let dsgNo;
+
+                                if (d.dsgNbr != null) {
+                                    dsgNo = d.dsgNbr.trim();
+                                }
+
+                                return dsgNo;
+                            }
+                        },
+                        {
+                            label: "문화재 명칭",
+                            format: function (d) {
+                                return "<a href=\"javascript:CulturalPropertyDetails(\'" + d.cpsNo + "\',\'" + d.classCd1 + "\')\">" + d.cpsNm + "</a>";
+                            }
+                        },
+                        {
+                            label: "소재지",
+                            format: function (d) { return d.location }
+                        },
+                        {
+                            label: "시/군",
+                            format: function (d) { return d.regNm }
+                        },
+                    ]).size(Infinity).sortBy(function (d) {
+                        if (sortName == "cpsGbnCd") {
+                            return d.cpsGbnCd;
+                        } else if (sortName == "cpsNm") {
+                            return d.cpsNm;
+                        } else if (sortName == "location") {
+                            return d.location;
+                        } else if (sortName == "regNm") {
+                            return d.regNm;
+                        }
+                        return d.classNm1;
+                    }).order(d3.descending)
+                        .on('renderlet', function (table) {
+                            table.selectAll(".dc-table-group").style('display', 'none');
+                        });
+                }
+                tableChart.render();
+                updateTable();
+            }
+
+        }
+        let cpsNo = 0;
+        let saveSortName = "종목";
+        function chartChangeBeforeCnt(regNm, sortName, event) {
+            let thisBtn = $(event);
+            let thisBtnParent = thisBtn.closest('.dc-table-head');
+
+            if (saveSortName != sortName) {
+                cpsNo = 0;
+            }
+
+            saveSortName = sortName;
+
+            let btnCnt = 0;
+
+            if (cpsNo == 0) {
+                cpsNo = 1;
+                btnCnt = 1;
+            } else if (cpsNo == 1) {
+                cpsNo = -1;
+                btnCnt = -1;
+            } else if (cpsNo == -1) {
+                cpsNo = 0;
+                sortName = "종목";
+            }
+
+            chartChange(regNm, sortName, btnCnt);
+
+        }
+        var tableOffset = 0, tablePageSize = 30;
+
+        /* 테이블 차트 새로고침 */
+        function updateTable() {
+            var totFilteredRecs = cf.groupAll().value();
+
+            var end = tableOffset + tablePageSize > totFilteredRecs ? totFilteredRecs : tableOffset + tablePageSize;
+            tableOffset = tableOffset >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / tablePageSize) * tablePageSize : tableOffset;
+            tableOffset = tableOffset < 0 ? 0 : tableOffset;
+
+            tableChart.beginSlice(tableOffset);
+            tableChart.endSlice(tableOffset + tablePageSize);
+
+            var endPage = Math.floor(totFilteredRecs / 30);
+
+            if (totFilteredRecs % 30 > 0) {
+                endPage += 1;
+            }
+
+            var curPage = tableOffset / 30;
+
+            d3.select('span#begin').text(curPage + 1);
+            d3.select('#Prev.btn').attr('disable', tableOffset - tablePageSize < 0 ? 'true' : null);
+            d3.select('#Next.btn').attr('disable', tableOffset + tablePageSize >= totFilteredRecs ? 'true' : null);
+            d3.select('span#size').text(endPage);
+
+            tableChart.redraw();
+
+            let parent = $('.dc-table-head');
+
+            let arrow1 = "fas fa-sort";
+            let arrow2 = "fas fa-sort";
+            let arrow3 = "fas fa-sort";
+            let arrow4 = "fas fa-sort";
+            let arrow5 = "fas fa-sort";
+            let arrow6 = "fas fa-sort";
+
+            if (saveSortName == "종목" && cpsNo == 1) {
+                arrow1 = "fas fa-caret-up";
+            } else if (saveSortName == "종목" && cpsNo == -1) {
+                arrow1 = "fas fa-caret-down";
+            }
+
+            if (saveSortName == "분류" && cpsNo == 1) {
+                arrow2 = "fas fa-caret-up";
+            } else if (saveSortName == "분류" && cpsNo == -1) {
+                arrow2 = "fas fa-caret-down";
+            }
+
+            if (saveSortName == "지정번호" && cpsNo == 1) {
+                arrow3 = "fas fa-caret-up";
+            } else if (saveSortName == "지정번호" && cpsNo == -1) {
+                arrow3 = "fas fa-caret-down";
+            }
+
+            if (saveSortName == "문화재 명칭" && cpsNo == 1) {
+                arrow4 = "fas fa-caret-up";
+            } else if (saveSortName == "문화재 명칭" && cpsNo == -1) {
+                arrow4 = "fas fa-caret-down";
+            }
+
+            if (saveSortName == "소재지" && cpsNo == 1) {
+                arrow5 = "fas fa-caret-up";
+            } else if (saveSortName == "소재지" && cpsNo == -1) {
+                arrow5 = "fas fa-caret-down";
+            }
+
+            if (saveSortName == "시/군" && cpsNo == 1) {
+                arrow6 = "fas fa-caret-up";
+            } else if (saveSortName == "시/군" && cpsNo == -1) {
+                arrow6 = "fas fa-caret-down";
+            }
+
+            $('.dc-table-head').eq(0).append('<button class=\"table_sort_btn\" onclick=\"chartChangeBeforeCnt(null,\'종목' + '\', this);\"><i class=\"' + arrow1 + '\"></i></button>');
+            $('.dc-table-head').eq(1).append('<button class=\"table_sort_btn\" onclick=\"chartChangeBeforeCnt(null,\'분류' + '\', this);\"><i class=\"' + arrow2 + '\"></i></button>');
+            $('.dc-table-head').eq(2).append('<button class=\"table_sort_btn\" onclick=\"chartChangeBeforeCnt(null,\'지정번호' + '\', this);\"><i class=\"' + arrow3 + '\"></i></button>');
+            $('.dc-table-head').eq(3).append('<button class=\"table_sort_btn\" onclick=\"chartChangeBeforeCnt(null,\'문화재 명칭' + '\', this);\"><i class=\"' + arrow4 + '\"></i></button>');
+            $('.dc-table-head').eq(4).append('<button class=\"table_sort_btn\" onclick=\"chartChangeBeforeCnt(null,\'소재지' + '\', this);\"><i class=\"' + arrow5 + '\"></i></button>');
+            $('.dc-table-head').eq(5).append('<button class=\"table_sort_btn\" onclick=\"chartChangeBeforeCnt(null,\'시/군' + '\', this);\"><i class=\"' + arrow6 + '\"></i></button>');
+
+        }
+        function replaceAt(input, index, character) {
+            return input.substr(0, index) + character + input.substr(index + character.length);
+        }
+
+        function nextPage() {
+            tableOffset += tablePageSize;
+            updateTable();
+        }
+        function prevPage() {
+            tableOffset -= tablePageSize;
+            updateTable();
+        }
+        function randomColor() {
+            return "#" + Math.random().toString(16).slice(2, 8);
+        }
+        function chartReset() {
+            $('.flex-container li').removeClass('active');
+            $('#all').click();
+        }
+    </script>
+
+
+
+
+    <!--footer -->
+    <div id="footer">
+        <footer>
+            <div class="inner">
+                <h1>
+                    <a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank" title="전북도청 새창열림">
+                        <img src="./img/jeon_buk_logo.png" alt="전라북도청 로고">
+                    </a>
+                </h1>
+                <div class="link clearfix">
+                    <a href="sub-13-privacy.html" target="_self" title="개인정보처리방침 서브페이지 이동">개인정보처리방침</a>
+                    <a href="sub-14-copyright.html" target="_self" title="저작권보호정책 서브페이지 이동">저작권보호정책</a>
+                    <a href="sub-15-email.html" target="_self" title="이메일집단수집거부 서브페이지 이동">이메일집단수집거부</a>
+                </div>
+                <div class="address">
+                    <p><span>&#40;우54968&#41; 전라북도 전주시 완산구 효자로 225</span></p>
+                    <p class="copy"><span>COPYRIGHTS &#169; JEONRABUKDO.</span> <span>ALL RIGHT RESERVED</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- //footer -->
+
+
+    <!--Top 버튼-->
+    <a href="#" id="btn_top" role="button"></a>
+    <!--//Top 버튼-->
+
+</body>
+
+</html>
