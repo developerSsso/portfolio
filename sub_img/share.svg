@@ -1,0 +1,14 @@
+<svg id="그룹_700" data-name="그룹 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.209" height="18" viewBox="0 0 18.209 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_195" data-name="사각형 195" width="18.209" height="18" fill="none" stroke="#999" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_699" data-name="그룹 699" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <ellipse id="타원_8" data-name="타원 8" cx="3.58" cy="3.58" rx="3.58" ry="3.58" transform="translate(0.535 5.42)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="선_22" data-name="선 22" y1="1.188" x2="3.882" transform="translate(7.363 5.703)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <ellipse id="타원_9" data-name="타원 9" cx="3.446" cy="3.445" rx="3.446" ry="3.445" transform="translate(10.783 0.535)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="선_23" data-name="선 23" x2="3.882" y2="1.188" transform="translate(7.363 11.109)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <ellipse id="타원_10" data-name="타원 10" cx="3.446" cy="3.445" rx="3.446" ry="3.445" transform="translate(10.783 10.575)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
