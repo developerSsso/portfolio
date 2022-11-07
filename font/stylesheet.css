@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'ONE Mobile';
+    src: url('ONEMobileRegular.eot');
+    src: url('ONEMobileRegular.eot?#iefix') format('embedded-opentype'),
+        url('ONEMobileRegular.woff2') format('woff2'),
+        url('ONEMobileRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ONE Mobile';
+    src: url('ONEMobileBold.eot');
+    src: url('ONEMobileBold.eot?#iefix') format('embedded-opentype'),
+        url('ONEMobileBold.woff2') format('woff2'),
+        url('ONEMobileBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
