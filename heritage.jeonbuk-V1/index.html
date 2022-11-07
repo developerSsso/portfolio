@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전라북도 문화유산 관광가이드</title>
+
+    <meta name="author" content="전라북도 문화유산과">
+    <meta name="description" content="전라북도의 역사와 기록을 간직한 문화유산이 있습니다.">
+    <meta name="keywords" content="전주, 전북도청, 문화유산, 문화관광, 전라북도 문화유산, 전라북도, 문화재, 전북관광, 전북문화">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./icons/favicon(1).ico" type="image/x-icon">
+    <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="./icons/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- HTML5shiv ie6~9 -->
+    <!--[if IE 10]>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!")
+        </script>
+    <![endif]-->
+
+    <!-- Javascript -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/modernizr-custom..js"></script>
+    <script src="./js/common.js"></script>
+
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <header class="header wrap">
+            <!-- header top -->
+            <div class="topMenu">
+                <div class="topMenu_wrap">
+                    <ul class="left_util">
+                        <li><a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank"
+                                title="전북도청 새창열림">전라북도청</a>
+                        </li>
+                        <li><a href="https://tour.jb.go.kr/index.do" target="_blank" title="전라북도 토탈관광 새창열림">전라북도
+                                토탈관광</a>
+                        </li>
+                        <li><a href="http://www.jbtourpass.kr/" target="_blank" title="전북투어패스 새창열림">전북투어패스</a>
+                        </li>
+                    </ul>
+                    <ul class="right_util">
+                        <li><a href="sub-12-login.html" target="_self" title="로그인 서브페이지 이동">로그인</a>
+                        </li>
+                        <li><a href="sub-10-mypage.html" target="_self" title="마이페이지 서브페이지 이동">마이페이지</a>
+                        </li>
+                        <li><a href="sub-11-notice.html" target="_self" title="공지사항 서브페이지 이동">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //header top -->
+
+            <div class="navi">
+                <div class="navi_wrap">
+                    <h1 class="logo">
+                        <span class="hide">전라북도 문화유산 관광가이드 로고</span>
+                        <a href="index.html" target="_self" title="메인페이지 이동">
+                        </a>
+                    </h1>
+
+                    <!-- header navi -->
+                    <nav id="gnb">
+                        <div class="gnb_bg">
+                            <h2 class="navi_hover"><span class="hide">네이게이션 타이틀</span></h2>
+                            <span><img src="./img/navi_bg.png" alt="메뉴페이지 배경이미지"></span>
+                        </div>
+                        <ul class="depth1">
+                            <li><a href="#none">전라북도 문화유산</a>
+                                <ul class="depth2">
+                                    <li><a href="sub-01.html" target="_self" title="문화유산 목록 서브페이지 이동">
+                                            문화유산 목록
+                                        </a></li>
+                                    <li><a href="sub-03.html" target="_self" title="문화유산 현황 서브페이지 이동">
+                                            문화유산 현황
+                                        </a></li>
+                                    <li><a href="sub-04-map.html" target="_self" title="지도에서 찾기 서브페이지 이동">
+                                            지도에서 찾기
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://heritage.jeonbuk.go.kr/jeonbuk_chm/tourGuide/3010_02.do" target="_self"
+                                    title="360도 VR 서브페이지 이동">360˚ VR
+                                    체험존</a></li>
+                            <li><a href="#none">문화유산 여행</a>
+                                <ul class="depth2">
+                                    <li><a href="sub-05.html" target="_self" title="문화유산 여행 추천코스 서브페이지 이동">
+                                            문화유산 여행 추천코스
+                                        </a></li>
+                                    <li><a href="./sub-07.html" target="_self" title="문화유산 여행 후기 서브페이지 이동">
+                                            문화유산 여행 후기
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- header navi -->
+
+                    <!-- header icon -->
+                    <div class="navi_icon">
+                        <ul class="navi_util">
+                            <li class="search_on">
+                                <div class="search_open">
+                                    <button type="button"><span class="hide">검색영역 열기</span></button>
+                                </div>
+                                <div class="search">
+                                    <div class="search_wrap">
+                                        <form action="#">
+                                            <fieldset>
+                                                <legend><span class="hide">통합검색</span></legend>
+                                                <div class="form_wrap clearfix">
+                                                    <input type="search" name="total_search" id="total_search"
+                                                        class="text" placeholder="검색어를 입력하세요">
+                                                    <label for="total_search" class="search_label"><span
+                                                            class="hide">검색어
+                                                            입력</span></label>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="search_close">
+                                        <button type="button"><span class="hide">검색영역 닫기</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="m_nav">
+                                <button type="button" class="m_btn"><span class="hide">모바일 메뉴 열기</span></button>
+
+                                <div class="m_menu">
+                                    <div class="m_top">
+                                        <h1 class="m_logo">
+                                            <a href="main.html" target="_self" title="메인페이지 이동">
+                                                <img src="./img/logo.png" alt="모바일로고">
+                                            </a>
+                                        </h1>
+                                        <button type="button" class="close_btn">
+                                            <img src="./icons/close.png" alt="모바일메뉴닫기" />
+                                        </button>
+                                    </div>
+
+                                    <ul class="m_depth1">
+                                        <li><a href="#none">전라북도 문화유산</a>
+                                            <ul class="m_depth2">
+                                                <li><a href="sub-01.html" target="_self" title="문화유산 목록 서브페이지 이동">
+                                                        문화유산 목록
+                                                    </a></li>
+                                                <li><a href="sub-03.html" target="_self" title="문화유산 현황 서브페이지 이동">
+                                                        문화유산 현황
+                                                    </a></li>
+                                                <li><a href="sub-04-map.html" target="_self" title="지도에서 찾기 서브페이지 이동">
+                                                        지도에서 찾기
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none" target="_self" title="360도 VR 서브페이지 이동">360˚ VR 체험존</a></li>
+                                        <li><a href="#none">문화유산 여행</a>
+                                            <ul class="m_depth2">
+                                                <li><a href="sub-05.html" target="_self" title="문화유산 여행 추천코스 서브페이지 이동">
+                                                        문화유산 여행 추천코스
+                                                    </a></li>
+                                                <li><a href="sub-07.html" target="_self" title="문화유산 여행 후기 서브페이지 이동">
+                                                        문화유산 여행 후기
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="m_bg"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //header icon -->
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- //header -->
+
+
+    <!-- content -->
+    <main id="container" class="shadow">
+        <div class="container wrap">
+
+            <!-- 메인 슬라이드 -->
+            <section id="area1" class="main_visual">
+                <div class="main_visual_wrap">
+                    <div class="visual_tit">
+                        <h2>전라북도에는<br />역사와 기록을 간직한 문화유산이<br />당신을 기다리고 있습니다.</h2>
+                        <p>전라북도에는 대한민국의 역사와 기록을 간직한 문화유산이 자리하고 있습니다.<br />여러가지 국보, 보물, 사적, 명승 등을 바로 전라북도에서 만나보세요!</p>
+                    </div>
+
+                    <div class="slider">
+                        <div class="slider_wrap">
+                            <ul class="slide_box">
+                                <li class="slide slide1 active"></li>
+                                <li class="slide slide2"></li>
+                                <li class="slide slide3"></li>
+                            </ul>
+                            <ul class="slider_control">
+                                <li class="active"><span class="hide">1</span></li>
+                                <li><span class="hide">2</span></li>
+                                <li><span class="hide">3</span></li>
+                            </ul>
+                            <div class="slider_btn">
+                                <button type="button" class="prev">
+                                    <span class="hide">prev</span>
+                                </button>
+                                <button type="button" class="next">
+                                    <span class="hide">next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="search">
+                    <div class="search_area">
+                        <fieldset>
+                            <legend><span class="hide">통합검색 영역</span></legend>
+                            <form id="searchform" method="post" name="searchform" action="/home/tour/support/search">
+                                <label for="qt" class="display_none">
+                                    <span class="hide">검색어 입력</span>
+                                </label>
+                                <div class="searchInput">
+                                    <input type="text" name="totalSearchTextBox" id="totalSearchTextBox" class="searchQuery"
+                                        placeholder="검색어를 입력하세요">
+                                    <label for="btnTotalSearch"><span class="hide">검색</span></label>
+                                </div>
+                                <label for="total_btn" class="total_btn_wrap">
+                                    <input type="button" class="total_btn" value="상세검색" id="total_btn">
+                                </label>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </section>
+            <!-- //메인 슬라이드-->
+
+            <!-- 전라북도 문화유산 가치 -->
+            <section id="area2">
+                <div class="area_wrap page2">
+                    <div class="inner">
+                        <div class="section_tit">
+                            <strong class="area_title"><em>전라북도 문화유산</em> 가치의 재발견</strong>
+                            <p class="area_info">
+                                전라북도 역사문화를 보존하고 인류문화의 발전에 기여합니다.
+                            </p>
+                        </div>
+                        <!-- heritage image list -->
+                        <div class="list01">
+                            <a href="sub-02-view.html" title="고창선운산도솔계곡일원">
+                                <img src="./img/heritage_image_01.jpg" alt="고창선운산도솔계곡일원">
+                                <p>고창 선운산 도솔계곡 일원</p>
+                            </a>
+
+                            <a href="sub-02-view.html" title="군산동국사대웅전">
+                                <img src="./img/heritage_image_02.jpg" alt="군산동국사대웅전">
+                                <p>군산 동국사 대웅전</p>
+                            </a>
+
+                            <a href="sub-02-view.html" title="정읍전봉준유적">
+                                <img src="./img/heritage_image_03.jpg" alt="정읍전봉준유적">
+                                <p>정읍 전봉준 유적</p>
+                            </a>
+
+                            <a href="sub-02-view.html" title="익산미륵산성">
+                                <img src="./img/heritage_image_04.jpg" alt="익산미륵산성">
+                                <p>익산 미륵산성</p>
+                            </a>
+
+                            <a href="sub-02-view.html" title="김제종덕리왕버들">
+                                <img src="./img/heritage_image_05.jpg" alt="고김제종덕리왕버들">
+                                <p>김제 종덕리 왕버들</p>
+                            </a>
+
+                            <a href="sub-02-view.html" title="남원광한루">
+                                <img src="./img/heritage_image_06.jpg" alt="남원광한루">
+                                <p>남원 광한루</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //전라북도 문화유산 가치 -->
+
+            <!-- 문화유산 여행코스 -->
+            <section id="area3">
+                <div class="area_wrap page3">
+                    <div class="section_tit">
+                        <strong class="area_title">전라북도 문화유산 <em>여행코스</em></strong>
+                        <p class="area_info">
+                            너도? 나도! 전라북도! 문화유산 여행코스를 추천합니다.
+                        </p>
+                    </div>
+
+                    <div class="tour_course">
+
+                        <div class="tour_tab">
+                            <div class="tab_box">
+                                <ul>
+                                    <li class="data-link on" data-tab="tab-1">
+                                        <a href="#none">&#35;가이드 추천코스</a>
+                                    </li>
+                                    <li class="data-link" data-tab="tab-2">
+                                        <a href="#none">&#35;네티즌 추천코스</a>
+                                    </li>
+                                </ul>
+                                <div class="zone-wrap">
+                                    <label for="zone-select"><span class="hide">지역선택</span></label>
+                                    <select name="zones" id="zone-select">
+                                        <option value="전주시">전주시</option>
+                                        <option value="고창군">고창군</option>
+                                        <option value="군산시">군산시</option>
+                                        <option value="김제시">김제시</option>
+                                        <option value="남원시">남원시</option>
+                                        <option value="무주군">무주군</option>
+                                        <option value="부안군">부안군</option>
+                                        <option value="순창군">순창군</option>
+                                        <option value="완주군">완주군</option>
+                                        <option value="익산시">익산시</option>
+                                        <option value="장수군">장수군</option>
+                                        <option value="정읍시">정읍시</option>
+                                        <option value="진안군">진안군</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div id="tab-1" class="tab_con on">
+
+                                <div class="tour_slider">
+                                    <div class="slides">
+
+                                        <div class="tab_slide tab_slide1 active">
+                                            <div class="img">
+                                                <img src="./img/guide_01.jpg" title="고창읍성" alt="고창읍성">
+                                            </div>
+                                            <ul class="info">
+                                                <li class="tit">
+                                                    <span>가이드 추천코스</span><br>
+                                                    [고창] 대표적 주요관광 코스
+
+                                                </li>
+                                                <li class="txt">
+                                                    고창읍성에서 고창 선운산까지 대표적 주요관광 코스입니다.
+                                                    고창읍성 - 고창 신재효 고택 - 고창 선운산 도솔계속 일원 문화유산을 상세히 둘러볼 수 있는 코스입니다.
+                                                    주변에 판소리박물관 - 고인돌 등의 관광지를 둘러볼 수 있는 코스입니다.
+                                                </li>
+                                                <!--                                                 <li class="adress">전주시 완산구 풍남동 3가 102</li> -->
+                                                <li class="view">
+                                                    <a href="./sub-06-view.html" target="_blank">자세히보기</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab_slide tab_slide2">
+                                            <div class="img">
+                                                <img src="./img/guide_02.jpg" title="김제 금산사 일원" alt="김제 금산사 일원">
+                                            </div>
+                                            <ul class="info">
+                                                <li class="tit">
+                                                    <span>가이드 추천코스</span><br>
+                                                    [김제] 김제시를 대표하는 관광지 만을 둘러보는 코스
+                                                </li>
+                                                <li class="txt">
+                                                    김제 금산사 일원에서 김제 벽골제까지 김제시를 대표하는 관광지 만을 둘러보는 코스입니다.
+                                                    김제 금산사 일원 - 김제동헌 - 김제 벽골제을 상세히 둘러볼 수 있는 코스입니다.
+                                                    주변에 아리랑문학마을 등의 관광지를 둘러볼 수 있는 코스입니다.
+                                                </li>
+                                                <!--                                                 <li class="adress">경북 구미시 도개면 도개다곡길 389-46 신라불교초전지</li> -->
+                                                <li class="view">
+                                                    <a href="./sub-06-view.html" target="_blank">자세히보기</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab_slide tab_slide3">
+                                            <div class="img">
+                                                <img src="./img/guide_03.jpg" title="구 조선은행 군산지점" alt="구 조선은행 군산지점">
+                                            </div>
+                                            <ul class="info">
+                                                <li class="tit">
+                                                    <span>가이드 추천코스</span><br>
+                                                    [군산] 2박3일 코스
+                                                </li>
+                                                <li class="txt">
+                                                    구 조선은행 군산지점에서 군산 말도 습곡구조까지 2박3일 코스입니다.
+                                                    근대역사박물관 일원 - 군산 신흥동 일본식 가옥 - 군산 동국사 - 해망굴 - 군산 구 임피역 - 발산리 유적 - 최호장군
+                                                    유지 - 이영춘 가옥 - 군산 선유도 유적 - 군산 말도 습곡구조 문화유산을 상세히 둘러보고
+                                                    주변에 진포해양공원(뜬다리 부두) - 이성당 - 초원사진관 - 고우당 - 테디베어박물관 - 월명공원 - 구암역사공원 -
+                                                    채만식문학관 -
+                                                    금강철새조망대 - 오성산 - 옥구농민항쟁기념비(임피중학교) - 아펜젤러순교기념관 - 비응도낙조 - 비응도수산물시장 등의
+                                                    관광지를 둘러볼 수 있는 코스입니다.
+                                                </li>
+                                                <!--                                                 <li class="adress">경북 구미시 도개면 도개다곡길 389-46 신라불교초전지</li> -->
+                                                <li class="view">
+                                                    <a href="./sub-06-view.html" target="_blank">자세히보기</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="page-btns">
+                                        <div class="active"></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+
+                                    <div class="side-btns">
+                                        <div>
+                                            <span class="tab_prev"></span>
+                                        </div>
+                                        <div>
+                                            <span class="tab_next"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div id="tab-2" class="tab_con">
+
+                                <div class="tour_slider">
+                                    <div class="slides">
+
+                                        <div class="tab_slide tab_slide1 active">
+                                            <div class="img">
+                                                <img src="./img/neti_01.jpg" title="익산 왕궁리 오층석탑" alt="익산 왕궁리 오층석탑">
+                                            </div>
+                                            <ul class="info">
+                                                <li class="tit">
+                                                    <span>네티즌 추천코스</span><br>
+                                                    익산시 네티즌 추천코스
+                                                </li>
+                                                <li class="txt">
+                                                    전라북도에 이렇게 많은 문화재가 있는지 몰랐어요 :)
+                                                    이번 여행을 통해서 많은 문화재들을 보고 느낄 수 있었던 특별한 여행이였던 같습니다
+                                                    너무너무 즐거웠던 여행을 같이 공유하고 싶은 마음에 이렇게 여행지를 올려봅니다. 같이 저와 함께 이 여행지를 미리
+                                                    경험해보세요
+                                                    좋은문화재를 이렇게 다양하게 경험할 수 있다는건 너무나 특별한 경험인 것 같습니다
+                                                </li>
+                                                <!--                                                 <li class="adress">경북 구미시 도개면 도개다곡길 389-46 신라불교초전지</li> -->
+                                                <li class="view">
+                                                    <a href="./sub-06-view.html" target="_blank">자세히보기</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab_slide tab_slide2">
+                                            <div class="img">
+                                                <img src="./img/heritage_image_04.jpg" title="임실 하가유적" alt="임실 하가유적">
+                                            </div>
+                                            <ul class="info">
+                                                <li class="tit">
+                                                    <span>네티즌 추천코스</span><br>
+                                                    임실군 네티즌 추천코스
+                                                </li>
+                                                <li class="txt">
+                                                    전라북도에 이렇게 많은 문화재가 있는지 몰랐어요 :)
+                                                    이번 여행을 통해서 많은 문화재들을 보고 느낄 수 있었던 특별한 여행이였던 같습니다
+                                                    너무너무 즐거웠던 여행을 같이 공유하고 싶은 마음에 이렇게 여행지를 올려봅니다. 같이 저와 함께 이 여행지를 미리
+                                                    경험해보세요
+                                                    좋은문화재를 이렇게 다양하게 경험할 수 있다는건 너무나 특별한 경험인 것 같습니다
+                                                </li>
+                                                <!--                                                 <li class="adress">경북 구미시 도개면 도개다곡길 389-46 신라불교초전지</li> -->
+                                                <li class="view">
+                                                    <a href="./sub-06-view.html" target="_blank">자세히보기</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab_slide tab_slide3">
+                                            <div class="img">
+                                                <img src="./img/neti_03.jpg" title="조경단" alt="조경단">
+                                            </div>
+                                            <ul class="info">
+                                                <li class="tit">
+                                                    <span>네티즌 추천코스</span><br>
+                                                    나의 여행코스 2
+                                                </li>
+                                                <li class="txt">
+                                                    나의 여행코스 설명하기
+                                                </li>
+                                                <!--                                                 <li class="adress">경북 구미시 도개면 도개다곡길 389-46 신라불교초전지</li> -->
+                                                <li class="view">
+                                                    <a href="" target="_blank">자세히보기</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="page-btns">
+                                        <div class="active"></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+
+                                    <div class="side-btns">
+                                        <div>
+                                            <span class="tab_prev"></span>
+                                        </div>
+                                        <div>
+                                            <span class="tab_next"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- //문화유산 여행코스 -->
+
+            <!-- -///////////////////////////////////////// -->
+            <!-- 탭메뉴 // 문화유산 여행코스 -->
+            <script>
+                $(function () {
+                    $('.tab_box li').click(function () {
+                        var tab_id = $(this).attr('data-tab');
+                        $('.tab_box li').removeClass('on');
+                        $('.tab_con').removeClass('on');
+                        $(this).addClass('on');
+                        $("#" + tab_id).addClass('on');
+                        return false;
+                    })
+                });
+            </script>
+
+            <!-- 탭_슬라이드 // 문화유산 여행코스 -->
+            <script>
+                $(document).ready(function () {
+                    console.clear();
+
+                    // 기존 버튼형 슬라이더
+                    $('.tour_slider > .page-btns > div').click(function () {
+                        var $thisA = $(this);
+                        var indexA = $thisA.index();
+
+                        $thisA.addClass('active');
+                        $thisA.siblings('.active').removeClass('active');
+
+                        var $sliderA = $thisA.parent().parent();
+
+                        var $currentA = $sliderA.find(' > .slides > div.active');
+
+                        var $postA = $sliderA.find(' > .slides > div').eq(indexA);
+
+                        $currentA.removeClass('active');
+                        $postA.addClass('active');
+                    });
+
+                    // 좌/우 버튼 추가 슬라이더
+                    $('.tour_slider > .side-btns > div').click(function () {
+                        var $thisA = $(this);
+                        var $sliderA = $thisA.closest('.tour_slider');
+
+                        var indexA = $thisA.index();
+                        var isLeftA = indexA == 0;
+
+                        var $currentA = $sliderA.find(' > .page-btns > div.active');
+                        var $postA;
+
+                        if (isLeftA) {
+                            $postA = $currentA.prev();
+                        }
+                        else {
+                            $postA = $currentA.next();
+                        };
+
+                        if ($postA.length == 0) {
+                            if (isLeftA) {
+                                $postA = $sliderA.find(' > .page-btns > div:last-child');
+                            }
+                            else {
+                                $postA = $sliderA.find(' > .page-btns > div:first-child');
+                            }
+                        };
+
+                        $postA.click();
+                    });
+                    setInterval(function () {
+                        $('.tour_slider > .side-btns > div').eq(1).click();
+                    }, 6000);
+                });
+            </script>
+            <!-- -///////////////////////////////////////// -->
+
+            <!--360도 VR체험존-->
+            <div id="area4">
+                <div class="area_wrap page4">
+                    <div class="section_tit">
+                        <span class="area_sub">
+                            전라북도 문화유산 관광가이드
+                        </span>
+                        <strong class="area_title"><em>360&#176; VR</em> 체험존</strong>
+                        <p class="area_info">
+                            전라북도 문화유산 360&#176; VR 체험존은 전라북도의 주요관광지를 VR 콘텐츠로 제공합니다.
+                        </p>
+                    </div>
+                    <div class="go_btn">
+                        <button type="button" onclick="location.href='http://localhost:8080/jeonbuk_chm/tourGuide/3010_02.do'">바로가기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //360도 VR체험존 -->
+
+            <!--테마여행 -->
+            <div id="area5">
+                <div class="area_wrap page5">
+                    <div class="inner">
+                        <div class="section_tit">
+                            <strong class="area_title">전라북도로 미리 떠나는 <em>테마여행</em></strong>
+                            <p class="area_info">
+                                여행을 떠나기 전 유용한 정보들을 찾아보세요!
+                            </p>
+                        </div>
+                        <!-- 테마여행 정보 list -->
+                        <div class="list02">
+                            <a href="https://tour.jb.go.kr/travel/info/list.do?category_top_id=e&menuCd=DOM_000000103007000000&contentsSid=32"
+                                target="_blank" title="전라북도 토탈관광 새창열림">
+                                <span class="thema01"></span>
+                                <div class="tit">
+                                    <div class="tit_wrap">
+                                        <strong>숙박소개</strong>
+                                        <p>전라북도의 다양한 숙박시설을 확인해보세요.</p>
+                                        <span class="thema_btn">바로가기</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://tour.jb.go.kr/travel/info/list.do?category_top_id=g&menuCd=DOM_000000103006000000&contentsSid=31"
+                                target="_blank" title="전라북도 토탈관광 새창열림">
+                                <span class="thema02"></span>
+                                <div class="tit">
+                                    <div class="tit_wrap">
+                                        <strong>음식소개</strong>
+                                        <p>전라북도의 맛있는 음식들을 소개합니다.</p>
+                                        <span class="thema_btn">바로가기</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://tour.jb.go.kr/travel/info/list.do?category_top_id=f&menuCd=DOM_000000103008000000&contentsSid=34"
+                                target="_blank" title="전라북도 토탈관광 새창열림">
+                                <span class="thema03"></span>
+                                <div class="tit">
+                                    <div class="tit_wrap">
+                                        <strong>쇼핑소개</strong>
+                                        <p>전라북도에서 즐거운 쇼핑을 시작해보세요.</p>
+                                        <span class="thema_btn">바로가기</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //테마여행 -->
+
+        </div>
+    </main>
+    <!-- //content -->
+
+
+    <!--footer -->
+    <div id="footer">
+        <footer>
+            <div class="inner">
+                <h1>
+                    <a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank" title="전북도청 새창열림">
+                        <img src="./img/jeon_buk_logo.png" alt="전라북도청 로고">
+                    </a>
+                </h1>
+                <div class="link clearfix">
+                    <a href="sub-13-privacy.html" target="_self" title="개인정보처리방침 서브페이지 이동">개인정보처리방침</a>
+                    <a href="sub-14-copyright.html" target="_self" title="저작권보호정책 서브페이지 이동">저작권보호정책</a>
+                    <a href="sub-15-email.html" target="_self" title="이메일집단수집거부 서브페이지 이동">이메일집단수집거부</a>
+                </div>
+                <div class="address">
+                    <p><span>&#40;우54968&#41; 전라북도 전주시 완산구 효자로 225</span></p>
+                    <p class="copy"><span>COPYRIGHTS &#169; JEONRABUKDO.</span> <span>ALL RIGHT RESERVED</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- //footer -->
+
+
+    <!--상세검색 모달창-->
+    <div class="s_pop_wrap">
+        <div class="s_pop">
+            <div class="searchBox">
+                <strong class="tt">상세검색</strong>
+                <ul>
+                    <li>
+                        <strong>문화재검색</strong>
+                        <div class="txts">
+                            <div data-skin="input">
+                                <input type="text" id="sch_1" name="sch_1" value="" placeholder="검색어를 입력하세요"
+                                    class="htg_sch" />
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <strong>지역</strong>
+                        <div class="bxs">
+                            <span class="sels">
+                                <select id="sch_2" name="sch_2">
+                                    <option value="전체">전체</option>
+                                    <option value="전주시">전주시</option>
+                                    <option value="고창군">고창군</option>
+                                    <option value="군산시">군산시</option>
+                                    <option value="김제시">김제시</option>
+                                    <option value="남원시">남원시</option>
+                                    <option value="무주군">무주군</option>
+                                    <option value="부안군">부안군</option>
+                                    <option value="순창군">순창군</option>
+                                    <option value="완주군">완주군</option>
+                                    <option value="익산시">익산시</option>
+                                    <option value="장수군">장수군</option>
+                                    <option value="정읍시">정읍시</option>
+                                    <option value="진안군">진안군</option>
+                                </select>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <strong>지정종목</strong>
+                        <div class="bxs">
+                            <span class="sels">
+                                <select id="content_obtaintype" name="content_obtaintype">
+                                    <option value="">전체</option>
+                                    <option value="국보">국보</option>
+                                    <option value="보물">보물</option>
+                                    <option value="사적">사적</option>
+                                    <option value="명승">명승</option>
+                                    <option value="천연기념물">천연기념물</option>
+                                    <option value="국가민속문화재">국가민속문화재</option>
+                                    <option value="등록문화재">등록문화재</option>
+                                    <option value="문화재자료">문화재자료</option>
+                                    <option value="도지정유형문화재">도지정유형문화재</option>
+                                    <option value="도지정기념물">도지정기념물</option>
+                                    <option value="도지정민속문화재">도지정민속문화재</option>
+                                    <option value="무형문화재">무형문화재</option>
+                                </select>
+                            </span>
+                            <span class="checks">
+                                <input type="checkbox" id="unlock" name="unlock">
+                                <label for="unlock">해제된 문화재</label>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <strong>지정번호</strong>
+                        <div class="txts">
+                            <div>
+                                <span data-skin="input">
+                                    <input type="number" placeholder="숫자만 입력하세요." id="sch_3" name="sch_3" value="">
+                                </span>
+                                <span style="font-size:20px;"> &#126; </span>
+                                <span data-skin="input">
+                                    <input type="number" placeholder="숫자만 입력하세요." id="sch_4" name="sch_4" value="">
+                                </span>
+                            </div>
+                            <span class="ex">(예:1호부터 100호까지)</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <strong>지정연도</strong>
+                        <div class="txts">
+                            <div>
+                                <span data-skin="input">
+                                    <input type="number" placeholder="숫자만 입력하세요." id="sch_5" name="sch_5" value="">
+                                </span>
+                                <span style="font-size:20px;"> &#126; </span>
+                                <span data-skin="input">
+                                    <input type="number" placeholder="숫자만 입력하세요." id="sch_6" name="sch_6" value="">
+                                </span>
+                            </div>
+                            <span class="ex">(예:1963년부터 1970년까지)</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <a href="#none">검색</a>
+                </div>
+                <a href="#none" class="spop_close">닫기</a>
+            </div>
+        </div>
+    </div>
+    <!-- //상세검색 모달창 -->
+
+    <!--Top 버튼-->
+    <a href="#" id="btn_top" role="button"></a>
+    <!--//Top 버튼-->
+
+</body>
+
+</html>
