@@ -1,0 +1,13 @@
+@charset "utf-8";
+@font-face {
+    font-family:'SebangR';
+    src:local('★'), url(../font/SEBANGGothic.eot) format('eot'), url(../font/SEBANGGothic.woff) format('woff'), url(../font/SEBANGGothic.woff2) format('woff2');
+}
+@font-face {
+    font-family:'SebangB';
+    src:local('★'), url(../font/SEBANGGothicBold.eot) format('eot'), url(../font/SEBANGGothicBold.woff) format('woff'), url(../font/SEBANGGothicBold.woff2) format('woff2');
+}
+@font-face {
+    font-family:'NanumGR';
+    src:local('★'), url(../font/NanumGothic.eot) format('eot'), url(../font/NanumGothic.woff) format('woff'), url(../font/NanumGothic.woff2) format('woff2');
+}
