@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'SEBANG Gothic';
+    src: url('SEBANGGothic.eot');
+    src: url('SEBANGGothic.eot?#iefix') format('embedded-opentype'),
+        url('SEBANGGothic.woff2') format('woff2'),
+        url('SEBANGGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SEBANG Gothic';
+    src: url('SEBANGGothicBold.eot');
+    src: url('SEBANGGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('SEBANGGothicBold.woff2') format('woff2'),
+        url('SEBANGGothicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
