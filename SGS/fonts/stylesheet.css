@@ -1,0 +1,44 @@
+@font-face {
+    font-family: '12LotteMartDreamLight';
+    src: url('12LotteMartDreamLight.eot');
+    src: url('12LotteMartDreamLight.eot?#iefix') format('embedded-opentype'),
+        url('12LotteMartDreamLight.woff2') format('woff2'),
+        url('12LotteMartDreamLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stylus BT';
+    src: url('StylusBT.eot');
+    src: url('StylusBT.eot?#iefix') format('embedded-opentype'),
+        url('StylusBT.woff2') format('woff2'),
+        url('StylusBT.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '12LotteMartDreamBold';
+    src: url('12LotteMartDreamBold.eot');
+    src: url('12LotteMartDreamBold.eot?#iefix') format('embedded-opentype'),
+        url('12LotteMartDreamBold.woff2') format('woff2'),
+        url('12LotteMartDreamBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '12LotteMartDreamMedium';
+    src: url('12LotteMartDreamMedium.eot');
+    src: url('12LotteMartDreamMedium.eot?#iefix') format('embedded-opentype'),
+        url('12LotteMartDreamMedium.woff2') format('woff2'),
+        url('12LotteMartDreamMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
