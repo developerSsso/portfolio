@@ -1,0 +1,9 @@
+@charset "utf-8";
+@font-face {
+    font-family:'OneR';
+    src:local('★'), url(../font/ONEMobileRegular.eot) format('eot'), url(../font/ONEMobileRegular.woff) format('woff'), url(../font/ONEMobileRegular.woff2) format('woff2');
+}
+@font-face {
+    font-family:'OneB';
+    src:local('★'), url(../font/ONEMobileBold.eot) format('eot'), url(../font/ONEMobileBold.woff) format('woff'), url(../font/ONEMobileBold.woff2) format('woff2');
+}
