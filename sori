@@ -1,1 +1,503 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국소리문화의전당</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div class="top_wrap">
+                <ul class="sns">
+                    <li><a href="#"><img src="./images/icon1_blog.png" alt="blog"></a></li>
+                    <li><a href="#"><img src="./images/icon2_face.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./images/icon3_insta.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="./images/icon4_you.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./images/icon5_kakao.png" alt="kakao"></a></li>
+                </ul>
+                <ul class="login">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">ENGLISH</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="head">
+            <div class="head_wrap">
+                <h1><a href="#"><img src="./images/logo.jpg" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">공연/전시</a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">공연안내</a></li>
+                                    <li><a href="#">전시안내</a></li>
+                                    <li><a href="#">아트숲</a></li>
+                                    <li><a href="#">문화예술교육</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">예매/회원</a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">예매</a></li>
+                                    <li><a href="#">회원안내</a></li>
+                                    <li><a href="#">좌석배치도</a></li>
+                                    <li><a href="#">My Page</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">대관안내</a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">대관절차</a></li>
+                                    <li><a href="#">대관규정</a></li>
+                                    <li><a href="#">대관료</a></li>
+                                    <li><a href="#">대관서식자료</a></li>
+                                    <li><a href="#">무대기술자료</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">공간안내</a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">한국소리문화의전당</a></li>
+                                    <li><a href="#">편의시설</a></li>
+                                    <li><a href="#">조형물</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">전당소개</a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">운영기관</a></li>
+                                    <li><a href="#">CEO인사말</a></li>
+                                    <li><a href="#">운영목표</a></li>
+                                    <li><a href="#">윤리경영</a></li>
+                                    <li><a href="#">CI소개</a></li>
+                                    <li><a href="#">조직도</a></li>
+                                    <li><a href="#">소통전북</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">고객센터</a>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">공고</a></li>
+                                    <li><a href="#">SORI NEWS</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">질문&답변</a></li>
+                                    <li><a href="#">고객의소리</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <article>
+                    <a href="#"><img src="./images/icon6_search.png" alt="search"></a>
+                    <a href="#"><img src="./images/icon7_menu.png" alt="menu"></a>
+                </article>
+            </div>
+        </div>
+    </header>
+    <div class="menu_box"></div>
+    <section id="page1">
+        <div class="img">
+            <ul class="home_slide">
+                <li><a href="#"><img src="./images/main1.jpg" alt="main_img1"></a></li>
+                <li><a href="#"><img src="./images/main2.jpg" alt="main_img2"></a></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <a href="#" class="prev"><img src="./images/prev.png" alt="prev"></a>
+            <a href="#" class="stop"><img src="./images/stop.png" alt="stop"></a>
+            <a href="#" class="next"><img src="./images/next.png" alt="next"></a>
+        </div>
+    </section>
+    <section id="page2">
+        <div class="wrap">
+            <article class="program">
+                <div class="line"></div>
+                <h3>Program</h3>
+                <h2>공연/전시</h2>
+                <p>한국소리문화전당의 다양한<br />프로그램을 안내합니다.</p>
+                <div class=more>
+                    <a href="#">공연 전체보기<span>+</span></a>
+                    <a href="#">전시 전체보기<span>+</span></a>
+                </div>
+            </article>
+            <article class="poster">
+                <div class="poster1">
+                    <div class="poster_wrap">
+                        <h4>2021 전주 비바체<br />실내악축제</h4>
+                        <p>8.15(일) 17:00<br />비대면 공연</p>
+                        <div class="btn">
+                            <a href="#">예매하기</a>
+                            <a href="#">상세보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster2">
+                    <div class="poster_wrap">
+                        <h4>문화가있는날<br />'월드콘'</h4>
+                        <p>8.25(수) 19:30<br />명인홀</p>
+                        <div class="btn">
+                            <a href="#">예매하기</a>
+                            <a href="#">상세보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster3">
+                    <div class="poster_wrap">
+                        <h4>힘내라! 전라북도,<br />울리자! 전북의소리</h4>
+                        <p>9.9(목) 19:30<br />모악당</p>
+                        <div class="btn">
+                            <a href="#">예매하기</a>
+                            <a href="#">상세보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster4">
+                    <div class="poster_wrap">
+                        <h4>변진섭 CONCERT<br />"THE BALLAD"</h4>
+                        <p>9.11(토) 18:30<br />모악당</p>
+                        <div class="btn">
+                            <a href="#">예매하기</a>
+                            <a href="#">상세보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster5">
+                    <div class="poster_wrap">
+                        <h4>뮤지컬 '달콤한<br />위로 초코파이'</h4>
+                        <p>9.4(토) 19:30<br />연지홀</p>
+                        <div class="btn">
+                            <a href="#">예매하기</a>
+                            <a href="#">상세보기</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="page3">
+        <div class="picto">
+            <article class="picto1">
+                <a href="#">
+                    <img src="./images/picto1.png" alt="공연일정">
+                    <p>공연일정</p>
+                </a>
+            </article>
+            <article class="picto2">
+                <a href="#">
+                    <img src="./images/picto2.png" alt="예매안내">
+                    <p>예매안내</p>
+                </a>
+            </article>
+            <article class="picto3">
+                <a href="#">
+                    <img src="./images/picto3.png" alt="예매확인/취소">
+                    <p>예매확인/취소</p>
+                </a>
+            </article>
+            <article class="picto4">
+                <a href="#">
+                    <img src="./images/picto4.png" alt="대관신청">
+                    <p>대관신청</p>
+                </a>
+            </article>
+            <article class="picto5">
+                <a href="#">
+                    <img src="./images/picto5.png" alt="좌석배치도">
+                    <p>좌석배치도</p>
+                </a>
+            </article>
+            <article class="picto6">
+                <a href="#">
+                    <img src="./images/picto6.png" alt="회원서비스">
+                    <p>회원서비스</p>
+                </a>
+            </article>
+            <article class="picto7">
+                <a href="#">
+                    <img src="./images/picto7.png" alt="오시는길">
+                    <p>오시는길</p>
+                </a>
+            </article>
+            <article class="picto8">
+                <a href="#">
+                    <img src="./images/picto8.png" alt="주차안내">
+                    <p>주차안내</p>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section id="page4">
+        <div class="wrap">
+            <h2>문화예술교육</h2>
+            <div class="title">
+                <p>With Sori</p>
+                <a href="#"><img src="./images/withsori_next.png" alt="next"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>중장년대상 문화예술교육<br /><span>발레로 쓰는 자서전</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>4차산업혁명 신기술융합프로그램<br /><span>기술입은 문화예술교육</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>See 作<br /><span>어른들의 문화놀이터</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>소리야 놀자 4.0<br /><span>지역아동센터 대상 예술교육</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>유아문화 예술교육<br /><span>소리터? 놀이터</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>예술감상교육<br /><span>아트숲 탐험</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>예술놀이터 SORI<br /><span>전시연계 미술감상교육</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>마리첼 My Little Challenge<br /><span>청소년 뮤지컬단</span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="page5">
+        <h2>SORI News</h2>
+        <div class="wrap">
+            <article class="notice">
+                <div>
+                    <a href="#" class="title">공지사항</a>
+                    <a href="#" class="more">+더보기</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">[모집마감] 예술교육 '발레로 쓰는 자서전'</a>
+                        <p>2021-08-04</p>
+                    </li>
+                    <li>
+                        <a href="#">[공고] 2021 꿈다락토요문화학교 참가자 모집</a>
+                        <p>2021-07-29</p>
+                    </li>
+                    <li>
+                        <a href="#">[공고] 2021 어른들의 문화놀이터 &lt;See 作&gt; 참가자 모집</a>
+                        <p>2021-07-29</p>
+                    </li>
+                    <li>
+                        <a href="#">직원 채용 최종 합격자 발표(회계, 무대)</a>
+                        <p>2021-07-29</p>
+                    </li>
+                    <li>
+                        <a href="#">사회적 거리두기 개편안에 따른 이용 안내(07.01~)</a>
+                        <p>2021-07-27</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="news">
+                <div>
+                    <a href="#" class="title">News</a>
+                    <a href="#" class="more">+더보기</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">[뉴스더원]한국소리문화의 전당 "아름다운...</a>
+                        <p>2021-08-12</p>
+                    </li>
+                    <li>
+                        <a href="#">[새만금일보]한국소리문화의전당 2021전주...</a>
+                        <p>2021-08-12</p>
+                    </li>
+                    <li>
+                        <a href="#">[전라매일]전북교육청-한국소리문화의전당 `맞손`</a>
+                        <p>2021-08-04</p>
+                    </li>
+                    <li>
+                        <a href="#">[뉴시스]한국소리문화의전당, &lt;크리에이터 토크쇼&gt; 개최</a>
+                        <p>2021-07-28</p>
+                    </li>
+                    <li>
+                        <a href="#">[전북중앙신문]소리문화전당과 20년··· "공연은 유백영"</a>
+                        <p>2021-07-05</p>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section id="page6">
+        <div class="intro">
+            <div>
+                <h2>한국소리문화의전당<br />공간소개</h2>
+                <p>한국소리문화의전당에서 운영하는 공간을 둘러보세요.</p>
+            </div>
+            <a href="#">MORE</a>
+        </div>
+        <div class="space">
+            <article class="sub">
+                <ul>
+                    <li><a href="#" data-space="space1">모악당</a></li>
+                    <li><a href="#" data-space="space2">연지홀</a></li>
+                    <li><a href="#" data-space="space3">명인홀</a></li>
+                    <li><a href="#" data-space="space4">야외공연장</a></li>
+                    <li><a href="#" data-space="space5">전시장</a></li>
+                    <li><a href="#" data-space="space6">국제회의장</a></li>
+                    <li><a href="#" data-space="space7">놀이마당</a></li>
+                </ul>
+            </article>
+            <article class="pic">
+                <div>
+                    <img src="./images/space1.jpg" class="spacepic" alt="공연공간">
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="page7">
+        <a href="#"><img src="./images/banner.jpg" alt="banner"></a>
+    </section>
+    <section id="page8">
+        <h2>SORI STORY</h2>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/story1.jpg" alt="story1">
+                        <p>역대 최대 규모 국고보조금 확보...<br />16개 공모사업 선정 '최다</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/story2.jpg" alt="story2">
+                        <p>&lt;어른들의 문화놀이터, See作&gt;<br />교육생 모집.#전시연미술프로그램</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/story3.jpg" alt="story3">
+                        <p>&lt;예술놀이터 SORI&gt; 참가자 모집<br />21.7.30(금)~9.21(일)까지</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/story4.jpg" alt="story4">
+                        <p>뮤지컬 '캣츠' 40주년 내한공연<br />유료회원 신규가입하고 50% 할인</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/story5.jpg" alt="story5">
+                        <p>&lt;2021 변진섭 콘서트 in 전주&gt; <br />9월 11일(토) 18시 30분</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="page9">
+        <div class="wrap">
+            <article class="call">
+                <div class="left">
+                    <img src="./images/call.png" alt="reserve">
+                    <h3>공연예매</h3>
+                    <article>
+                        <ul>
+                            <p>기획공연</p>
+                            <li>
+                                <h4>063-270-7877</h4>
+                                <span>(한국소리문화의전당 중앙매표소)</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <p>대관공연</p>
+                            <li>
+                                <h4>1544-1555</h4>
+                                <span>(인터파크 티켓)</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="right">
+                    <h3>공연안내</h3>
+                    <h4>063-270-8000</h4>
+                </div>
+            </article>
+            <article class="see">
+                <ul class="see_slide">
+                    <li><a href="#"><img src="./images/see1.jpg" alt="see1"></a></li>
+                    <li><a href="#"><img src="./images/see2.jpg" alt="see2"></a></li>
+                    <li><a href="#"><img src="./images/see3.jpg" alt="see3"></a></li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="top">
+            <article>
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li>|</li>
+                    <li><a href="#">정보공개</a></li>
+                    <li>|</li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="./images/insta.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="./images/face.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./images/blog.png" alt="blog"></a></li>
+                    <li><a href="#"><img src="./images/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./images/kakao.png" alt="kakao"></a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="bottom">
+            <article>
+                <p>(54901) 전북 전주시 덕진구 소리로31 한국소리문화의전당<br />
+                    대표:서현석  Tel:063-270-8000   FAX:063-270-7814<br />
+                    Copyright (c) 2015 Sori Arts Center of Jeollabuk-do, All Rights Reserved.</p>
+                <div>
+                    <p>고객센터</p>
+                    <h2>063-270-8000</h2>
+                    <span>(10:00 ~ 18:00)</span>
+                </div>
+                <h1><a href="#"><img src="./images/logo2.png" alt="logo2"></a></h1>
+            </article>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
