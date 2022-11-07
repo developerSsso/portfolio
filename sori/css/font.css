@@ -1,0 +1,17 @@
+@charset "utf-8";
+@font-face {
+    font-family:'NotoB';
+    src:local('★'), url(../fonts/NotoSansKR-Bold-Alphabetic.eot) format('eot'), url(../fonts/NotoSansKR-Bold-Alphabetic.woff) format('woff'), url(../fonts/NotoSansKR-Bold-Alphabetic.woff2) format('woff2');
+}
+@font-face {
+    font-family:'NotoL';
+    src:local('★'), url(../fonts/NotoSansKR-Light-Alphabetic.eot) format('eot'), url(../fonts/NotoSansKR-Light-Alphabetic.woff) format('woff'), url(../fonts/NotoSansKR-Light-Alphabetic.woff2) format('woff2');
+}
+@font-face {
+    font-family:'NotoM';
+    src:local('★'), url(../fonts/NotoSansKR-Medium-Alphabetic.eot) format('eot'), url(../fonts/NotoSansKR-Medium-Alphabetic.woff) format('woff'), url(../fonts/NotoSansKR-Medium-Alphabetic.woff2) format('woff2');
+}
+@font-face {
+    font-family:'NotoR';
+    src:local('★'), url(../fonts/NotoSansKR-Regular-Alphabetic.eot) format('eot'), url(../fonts/NotoSansKR-Regular-Alphabetic.woff) format('woff'), url(../fonts/NotoSansKR-Regular-Alphabetic.woff2) format('woff2');
+}
