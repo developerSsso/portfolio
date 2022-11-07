@@ -1,0 +1,18 @@
+@charset "utf-8";
+@font-face {
+    font-family:'LotteL';
+    src:local('★'), url(../fonts/12LotteMartDreamLight.eot) format('eot'), url(../fonts/12LotteMartDreamLight.woff) format('woff'), url(../fonts/12LotteMartDreamLight.woff2) format('woff2');
+}
+@font-face {
+    font-family:'LotteM';
+    src:local('★'), url(../fonts/12LotteMartDreamMedium.eot) format('eot'), url(../fonts/12LotteMartDreamMedium.woff) format('woff'), url(../fonts/12LotteMartDreamMedium.woff2) format('woff2');
+}
+@font-face {
+    font-family:'LotteB';
+    src:local('★'), url(../fonts/12LotteMartDreamBold.eot) format('eot'), url(../fonts/12LotteMartDreamBold.woff) format('woff'), url(../fonts/12LotteMartDreamBold.woff2) format('woff2');
+}
+@font-face {
+    font-family:'StylusBT';
+    src:local('★'), url(../fonts/StylusBT.eot) format('eot'), url(../fonts/StylusBT.woff) format('woff'), url(../fonts/StylusBT.woff2) format('woff2');
+}
+
